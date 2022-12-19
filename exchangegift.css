@@ -1,0 +1,40 @@
+:root {
+    --b1: #6cf;
+    --b2: #ff6;
+    --b3: #ff8533;
+    --b4: #ff471a;
+    --b5: #c0c;
+    --b6: #3c3;
+}
+
+body {
+  
+    
+}
+
+.balls{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Ball format */
+
+.b {
+    display: flex;
+    padding: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Ball Colors  */
+
+.b1 {background-color: var(--b1);}
+.b2 {background-color: var(--b2);}
+.b3 {background-color: var(--b3);}
+.b4 {background-color: var(--b4);}
+.b5 {background-color: var(--b5);}
+.b6 {background-color: var(--b6);}
