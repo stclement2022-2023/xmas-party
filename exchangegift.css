@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 :root {
     --b1: #6cf;
     --b2: #ff6;
@@ -7,27 +11,41 @@
     --b6: #3c3;
 }
 
-body {
-  
-    
+.header {
+    display: flex;
+    margin: -8px;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    background-color: aqua;
 }
 
-.balls, main{
-    display: flex;
-    flex-wrap: wrap;
+.header img {
+    margin-right: 10px;
 }
+
+.title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.stitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
 
 /* Ball format */
 
-.b {
+.balls, .main {
     display: flex;
-    padding: 25px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center; 
+    flex-wrap: wrap;
 }
 
 /* Ball Colors  */
@@ -38,6 +56,19 @@ body {
 .b4 {background-color: var(--b4);}
 .b5 {background-color: var(--b5);}
 .b6 {background-color: var(--b6);}
+
+
+
+.b {
+    display: flex;
+    padding: 25px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
 
 .wrong {
     position: absolute;
