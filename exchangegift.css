@@ -64,7 +64,7 @@ body {
     color: #630;
     background-color: #ff6;
     width: 80%;
-    border-radius: 0 30px 5px 0;
+    border-radius: 0 30px 30px 0;
 }
 
 .q span {
@@ -80,13 +80,20 @@ div.hr {
     width: 100%;
 }
 
+.balls {
+    position: absolute;
+}
+
 /* Ball format */
 
 .balls, .main {
     display: flex;
+    height: 70%;
+    width: 80%;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
+    margin: auto;
     
 }
 
@@ -105,6 +112,9 @@ div.hr {
 
 
 .b {
+    position: absolute;
+    top: 50%;
+    left: (50%)-50px;
     display: flex;
     padding: 25px;
     border-radius: 50%;
@@ -112,8 +122,21 @@ div.hr {
     height: 100px;
     text-align: center;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+.a1 {animation-name: a1;}
+.a2 {animation-name: a2;}
+.a3 {animation-name: a3;}
+.a4 {animation-name: a4;}
+.u {animation-name: u;}
+.r {animation-name: r;}
+.d {animation-name: d;}
+.l {animation-name: l;}
+
 
 .center {
     position: absolute;
@@ -125,6 +148,7 @@ div.hr {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    animation: none;
 }
 
 .rotate {
@@ -136,15 +160,25 @@ div.hr {
     align-items: center;
     width: 250px;
     height: 250px;
-    border: 10px dashed white;
+    
+}
+
+.rot {
     border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 10px dashed white;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: -1s;
+    animation-name: rot;
 }
 
 .wrong {
     display: none;
     position: absolute;
     left: 40%;
-    /*top: 50%; */
     text-align: center;
     align-items: center;
     justify-content: center;
