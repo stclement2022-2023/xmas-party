@@ -1,0 +1,83 @@
+@media only screen and (max-width: 576px) {
+    .header img {
+        display: none;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    .stitle {
+        margin-top: -25px;
+    }
+
+    .header {
+        height: 60px;
+        padding-left: 0;
+    }
+
+    .header + div {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .q {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        font-size: 8px;
+    }
+
+    .me1 {
+        position: fixed;
+        transform: scale(0.5, 0.5);
+        bottom: -35px;
+        left: 63%;    
+    }
+
+    .rotate {
+        transform: scale(0.5, 0.5);
+        z-index: 49;
+        top: 35%;
+    }
+
+    .b {
+        transform: scale(0.5, 0.5);
+        z-index: 0;
+    }
+
+    .balls, .main {
+        left: 0;
+        top: 20%;
+        height: 65%;
+    }
+
+    .correct {
+        height: 350px;
+    }
+
+    .correct p {
+        font-size: 10px;
+    }
+
+    .correct img {
+        transform: scale(1.2, 1.2);
+    }
+
+    .correct img + p {
+        margin-top: 20px;
+    }
+
+    .err1 {
+        
+    }
+
+    .wrong {
+        transform: scale(0.4, 0.4);
+        left: -30px;
+        top: 20%;
+    }
+}
