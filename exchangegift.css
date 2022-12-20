@@ -11,13 +11,26 @@
     --b6: #3c3;
 }
 
+body {
+  background-image: url("images/bgimg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 1180px;
+  background-position: right;
+  
+}
+
+
 .header {
     display: flex;
     margin: -8px;
     flex-wrap: wrap;
     padding: 10px;
     justify-content: center;
-    background-color: aqua;
+    background-color: #e62e00;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: azure;
 }
 
 .header img {
@@ -31,6 +44,7 @@
     justify-content: center;
     font-size: 32px;
     margin-top: 10px;
+    color: #ff6;
 }
 
 .stitle {
@@ -38,16 +52,47 @@
     text-align: center;
     justify-content: center;
     margin-top: -30px;
+    color: azure;
 }
 
+.q {
+    position: relative;
+    left: -10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #630;
+    background-color: #ff6;
+    width: 80%;
+    border-radius: 0 30px 5px 0;
+}
+
+.q span {
+    color: #e62e00;
+}
+
+div.hr {
+    display: block;
+    margin: auto;
+    border-style: dashed;
+    border-color: white;
+    border-width: 3px 0 0 0;
+    width: 100%;
+}
 
 /* Ball format */
 
 .balls, .main {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    
 }
 
+.main {
+    height: 90%;
+}
 /* Ball Colors  */
 
 .b1 {background-color: var(--b1);}
@@ -70,7 +115,33 @@
     justify-content: center; 
 }
 
+.center {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.rotate {
+    position: absolute;
+    display: flex;
+    top: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 10px dashed white;
+    border-radius: 50%;
+}
+
 .wrong {
+    display: none;
     position: absolute;
     left: 40%;
     /*top: 50%; */
@@ -79,6 +150,9 @@
     justify-content: center;
 }
 
+.correct {
+  display: none;
+}
 
 /*
 .err1, .err2, .err3, .err4, .err5, .err6, .err7 {
@@ -87,3 +161,28 @@
     justify-content: center;
 }
 */
+
+.footer {
+    display: flex;
+    margin: 0 -9px 0 -9px;
+    background-color: #3c3;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    
+}
+
+.me1 {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+}
+
+.me1 img {
+    height: 300px;
+    width: auto;
+}
